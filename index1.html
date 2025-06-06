@@ -14,33 +14,102 @@
     }
 
     .board {
-      width: 480px;
-      height: 480px;
       display: grid;
       grid-template-columns: repeat(8, 60px);
       grid-template-rows: repeat(8, 60px);
-      border: 10px solid black;
-      box-shadow: 0 0 0 4px white, 0 0 0 6px black;
+      border: 5px solid black;
+      width: 480px;
     }
 
-    .board div {
+    .cell {
       width: 60px;
       height: 60px;
+    }
+
+    .black {
+      background-color: black;
+    }
+
+    .pink {
+      background-color: pink;
     }
   </style>
 </head>
 <body>
-  <div class="board" id="board"></div>
+  <div class="board">
 
-  <script>
-    const board = document.getElementById('board');
-    for (let row = 0; row < 8; row++) {
-      for (let col = 0; col < 8; col++) {
-        const cell = document.createElement('div');
-        cell.style.backgroundColor = (row + col) % 2 === 0 ? 'pink' : 'black';
-        board.appendChild(cell);
-      }
-    }
-  </script>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+    <div class="cell black"></div>
+    <div class="cell pink"></div>
+
+  </div>
 </body>
 </html>
